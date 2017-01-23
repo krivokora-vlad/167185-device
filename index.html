@@ -14,20 +14,26 @@
             </div>
             <nav>
                 <div class="col-6">
-                    <form action="/">
+                    <form action="/" method="post">
                         <input type="search" name="search" placeholder="Поиск по сайту">
-                        <input type="submit" value="Найти">
+                        <button type="submit">Найти</button>
                     </form>
-                    <ul class="catalog-menu">
-                        <li><a href="#" class="btn-menu">Каталог товаров</a></li>
+                    <a href="#" class="btn-menu">Каталог товаров</a>
+                    <ul class="catalog-menu" style="display: none">
+                        <li><a href="#">Виртуальная реальность</a></li>
+                        <li><a href="#">Моноподы для селфи</a></li>
+                        <li><a href="#">Экшн-камеры</a></li>
+                        <li><a href="#">Фитнесс-браслеты</a></li>
+                        <li><a href="#">Умные часы</a></li>
+                        <li><a href="#">Квадрокоптеры</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
                     <div class="row user-menu">
-                        <a href="#" class="login">Войти</a>
+                        <a href="#" class="login btn-user">Войти</a>
                         <div class="shop-menu">
-                            <a href="#">Сравнить</a>
-                            <a href="#">Корзина</a>
+                            <a href="#" class="btn-user">Сравнить</a>
+                            <a href="#" class="btn-user">Корзина</a>
                         </div>
                     </div>
                     <div class="row main-menu">
@@ -49,7 +55,7 @@
                     <h2>Делай селфи, как Бен Стиллер!</h2>
                     <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a href="#">Подробнее</a>
+                    <a href="#" class="btn">Подробнее</a>
                     <ul class="product-parameters">
                         <li>
                             <p class="parameter-value">8,5 м</p>
@@ -66,6 +72,43 @@
                     </ul>
                 </div>
             </div>
+            <div class="slider-item" style="display: none">
+                <img src="" alt="product" width="" height="">
+                <div class="product-description">
+                    <div class="slider-number">02</div>
+                    <h2>Худеем правильно!</h2>
+                    <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы <br>
+                        не пропускать занятия и соблюдать диету.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                    <ul class="product-parameters">
+                        <li>
+                            <p class="parameter-value">48 часов</p>
+                            <p class="parameter-title">Без подзарядки</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-item" style="display: none">
+                <img src="" alt="product" width="" height="">
+                <div class="product-description">
+                    <div class="slider-number">03</div>
+                    <h2>Порхает как бабочка,<br>
+                        жалит как пчела!</h2>
+                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                        мощным лазером, замаскированным под стандартную камеру.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                    <ul class="product-parameters">
+                        <li>
+                            <p class="parameter-value">800 м</p>
+                            <p class="parameter-title">Дальность полета</p>
+                        </li>
+                        <li>
+                            <p class="parameter-value">50 м</p>
+                            <p class="parameter-title">Радиус поражения</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="pagination">
                 <div class="dots"></div>
                 <div class="dots"></div>
@@ -78,7 +121,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Виртуальная реальность</h3>
                     </a>
@@ -86,7 +129,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Моноподы для селфи</h3>
                     </a>
@@ -94,7 +137,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Экшн-камеры</h3>
                     </a>
@@ -102,7 +145,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Фитнесс браслеты</h3>
                     </a>
@@ -110,7 +153,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Умные часы</h3>
                     </a>
@@ -118,7 +161,7 @@
                 <div class="popular-item">
                     <a href="#">
                         <div class="wrapper-img">
-                            <img src="" alt="" width="160" height="160">
+                            <img src="img/160х160.png" alt="Популярный товар" width="160" height="160">
                         </div>
                         <h3>Квадрокоптеры</h3>
                     </a>
@@ -130,9 +173,9 @@
             <div class="container">
                 <div class="col">
                     <ul>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Кредит</a></li>
+                        <li><a href="#" class="btn">Доставка</a></li>
+                        <li><a href="#" class="btn">Гарантия</a></li>
+                        <li><a href="#" class="btn">Кредит</a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -144,14 +187,14 @@
                                 на ваш этаж.</p>
                             <img src="" alt="" width="" height="">
                         </div>
-                        <div class="slide">
+                        <div class="slide" style="display: none">
                             <h2>Гарантия</h2>
                             <p>Если из-за возгарания купленного у нас товара у вас сгорит
                                 дом — не переживайте, мы выдадим вам новый.<br>
                                 Товар, не дом, конечно же.</p>
                             <img src="" alt="" width="" height="">
                         </div>
-                        <div class="slide">
+                        <div class="slide" style="display: none">
                             <h2>Кредит</h2>
                             <p>Залезть в долговую яму стало проще! Кредитные консультанты
                                 подберут для вас наиболее выгодные условия кредита.
@@ -188,7 +231,7 @@
                             <li class="item">Автотрейдинг</li>
                             <li class="item">ЖелДорЭкспедиция</li>
                         </ul>
-                        <a href="#">Подробнее о нас</a>
+                        <a href="#" class="btn">Подробнее о нас</a>
                     </div>
                     <div class="col-6 contact">
                         <h2>Контакты</h2>
@@ -197,7 +240,7 @@
                         <iframe width="560" height="222" frameborder="0" style="border:0"
                         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJVYlcX_ZMtUYRHlBVzQxxlAY&key=..."
                         allowfullscreen></iframe>
-                        <a href="#">Напишите нам</a>
+                        <a href="#" class="btn">Напишите нам</a>
                     </div>
                 </div>
             </div>
@@ -212,9 +255,9 @@
                 </div>
                 <div class="col-9">
                     <ul class="user-menu">
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Сравнить</a></li>
-                        <li><a href="#">Корзина</a></li>
+                        <li><a href="#" class="btn-user">Войти</a></li>
+                        <li><a href="#" class="btn-user">Сравнить</a></li>
+                        <li><a href="#" class="btn-user">Корзина</a></li>
                     </ul>
                 </div>
             </div>
@@ -224,9 +267,9 @@
                 </div>
                 <div class="col-6">
                     <ul class="footer-menu">
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Гарантия</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#" class="btn-menu">Доставка</a></li>
+                        <li><a href="#" class="btn-menu">Гарантия</a></li>
+                        <li><a href="#" class="btn-menu">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -244,5 +287,20 @@
             </div>
         </div>
     </footer>
+    <!-- Начало всплывающей формы write-us, при нажатии на ссылку "Напишите нам" -->
+    <div class="write-us-popup" style="display: none">
+        <a href="#" class="close-form">Закрыть</a>
+        <form action="/" method="get">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name"placeholder="Представьтесь, пожалуйста">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" rows="8" cols="40" id="text" placeholder="В свободной форме"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <!-- Начало всплывающего окна map, при нажатии на карту в блоке "Контакты" -->
+    <div class="map-popup"></div>
   </body>
 </html>
