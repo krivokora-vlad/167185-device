@@ -13,7 +13,7 @@
                   <a href="index.html" class="logo">Device</a>
               </div>
               <nav>
-                  <form action="/" method="post">
+                  <form action="https://echo.htmlacademy.ru" method="post">
                       <input type="search" name="search" placeholder="Поиск по сайту">
                       <button type="submit">Найти</button>
                   </form>
@@ -56,13 +56,13 @@
           <div class="container">
               <aside class="filter-product">
                   <h3>Фильтр:</h3>
-                  <form action="/" class="filter" method="get">
+                  <form action="https://echo.htmlacademy.ru" method="get" class="filter">
                         <div class="value">
-                            <h4>Стоимость</h4>
+                            <h2>Стоимость</h2>
                             <input type="range" name="value" min="0" max="10000" value="5000">
                         </div>
                         <div class="color">
-                            <h4>Цвета</h4>
+                            <h2>Цвета</h2>
                             <input type="checkbox" name="black" id="black" checked>
                             <label for="black">Черный</label>
                             <input type="checkbox" name="white" id="white">
@@ -75,7 +75,7 @@
                             <label for="pink">Розовый</label>
                         </div>
                         <div class="bluetooth">
-                            <h4>Bluetooth</h4>
+                            <h2>Bluetooth</h2>
                             <input type="radio" name="bluetooth" value="true">
                             <input type="radio" name="bluetooth" value="false">
                         </div>
@@ -90,40 +90,40 @@
                             <li><a href="#">По типу</a></li>
                             <li><a href="#">По популярности</a></li>
                         </ul>
-                        <a href="#" class="sorting-up"></a>
-                        <a href="#" class="sorting-down"></a>
+                        <ul>
+                            <li><a href="#" class="sorting-up"></a></li>
+                            <li><a href="#" class="sorting-down"></a></li>
+                        </ul>
                   </header>
                   <div class="products">
                         <article class="product-item">
                             <img src="img/item-1.jpg" alt="Товар" width="360" height="380">
-                            <h4>Любительская селфи-палка</h4>
+                            <h1><a href="#">Любительская селфи-палка</a></h1>
                             <span>500 руб.</span>
                         </article>
                         <article class="product-item">
                             <img src="img/item-2.jpg" alt="Товар" width="360" height="380">
-                            <h4>Профессиональная селфи-палка</h4>
+                            <h1><a href="#">Профессиональная селфи-палка</a></h1>
                             <span>1 500 руб.</span>
                         </article>
                         <article class="product-item">
                             <img src="img/item-3.jpg" alt="Товар" width="360" height="380">
-                            <h4>Непотопляемая селфи-палка</h4>
+                            <h1><a href="#">Непотопляемая селфи-палка</a></h1>
                             <span>2 500 руб.</span>
                         </article>
                         <article class="product-item">
                             <img src="img/item-4.jpg" alt="Товар" width="360" height="380">
-                            <h4>Селфи-палка &laquo;Следуй за мной&raquo;</h4>
+                            <h1><a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a></h1>
                             <span>4 900 руб.</span>
                         </article>
                   </div>
-                  <div class="pagination">
-                        <a href="#" class="prev">Назад</a>
-                        <div class="page">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                        </div>
-                        <a href="#" class="next">Вперёд</a>
-                  </div>
+                  <ul class="pagination">
+                        <li><a href="#" class="prev">Назад</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#" class="next">Вперёд</a></li>
+                  </ul>
               </section>
           </div>
       </div>
