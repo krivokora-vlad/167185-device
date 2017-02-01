@@ -271,3 +271,136 @@ form,
 .page-footer .logo-htmlacademy {
     float: right;
 }
+
+
+/*Начало страницы catalog.html*/
+/*Начало хлебной крошки*/
+
+.breadcrumbs {
+    padding-left: 60px;
+    padding-top: 45px;
+}
+.breadcrumbs h2 {
+    margin: 0;
+    font-size: 47px;
+}
+.breadcrumbs ul {
+    padding: 28px 0 50px 0;
+    margin: 0;
+    list-style: none;
+}
+.breadcrumbs li {
+    float: left;
+    margin-right: 40px;
+}
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/*Начало каталога*/
+
+.page-catalog {
+
+}
+
+.filter-product {
+    padding-left: 60px;
+    background: rgba(0, 0, 0, 0.16);
+    float: left;
+    width: 328px;
+}
+.filter-product h3 {
+    margin: 30px 0 30px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+.sorting {
+    float: left;
+    width: 832px;
+    padding-bottom: 74px;
+}
+.sorting header {
+    padding-left: 74px;
+    background: rgba(0, 0, 0, 0.08);
+}
+.sorting header h3{
+    float: left;
+    margin: 24px 0;
+    display: inline-block;
+}
+.sorting header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    float: right;
+}
+.sorting header li {
+    float: left;
+    line-height: 70px;
+    margin-right: 30px;
+}
+.sorting header li:last-child {
+    margin-right: 0;
+}
+.sorting header a {
+    text-decoration: none;
+    color: black;
+}
+
+.products {
+    padding-top: 70px;
+    padding-left: 72px;
+}
+.product-item {
+    float: left;
+    width: 360px;
+    margin-right: 40px;
+}
+.product-item:nth-child(2n) {
+    margin-right: 0;
+}
+.product-item h1 {
+    width: 200px;
+    float: left;
+    margin-top: 34px;
+    margin-bottom: 76px;
+    line-height: 18px;
+}
+.product-item a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.product-item span {
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 76px;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    display: block;
+    background-color: #ebebeb;
+}
+.pagination li {
+    float: left;
+    padding: 30px;
+}
+.pagination li:last-child {
+    float: right;
+}
+.pagination a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
