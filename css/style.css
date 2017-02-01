@@ -2,3 +2,272 @@ body {
     background-color: white;
     /*Просто так*/
 }
+
+/*Общие классы*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.btn {
+    display: block;
+    width: 160px;
+    line-height: 8px;
+    background-color: #f0c52e;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.btn-menu {
+    font-family: 'gilroyextrabold', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+}
+.btn-user {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/*Конец общих классов*/
+
+.header-container {
+    padding-top: 40px;
+}
+
+.page-header {
+    background-color: #f7e296;
+    position: relative;
+    padding: 30px 60px 140px 60px;
+}
+
+.wrapper-logo {
+    position: absolute;
+}
+
+.page-header form {
+    height: 58px;
+}
+
+form,
+.open-menu {
+    width: 520px;
+    float: left;
+}
+
+.user-menu,
+.shop-menu,
+.main-menu {
+    float: right;
+}
+
+.user-menu {
+    width: 300px;
+}
+
+.shop-menu {
+    width: 220px;
+}
+
+.main-menu {
+    width: 500px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu .btn-menu {
+    float: left;
+}
+/*Конец header, Начало промо слайдера*/
+
+.slider-promo {
+    position: relative;
+    top: -140px;
+}
+
+.slider-item img {
+    float: left;
+}
+
+.slider-item .product-description {
+    float: right;
+    width: 520px;
+}
+
+/*Начало популярных товаров*/
+
+.page-popular {
+    padding-top: 50px;
+}
+
+.popular-item {
+    float: left;
+    width: 160px;
+    margin-right: 40px;
+}
+
+.popular-item:last-child {
+    margin-right: 0;
+}
+
+.popular-item img {
+    background-color: #f7e296;
+}
+
+/*Начало сервиса*/
+
+.page-services {
+    background-color: #e5e5e5;
+}
+
+.page-services ul {
+    float: left;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-services li {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.page-services .wrapper {
+    float: right;
+    width: 760px;
+}
+
+.page-services .slide p {
+    width: 460px;
+    float: left;
+}
+
+.page-services .slide img {
+    float: right;
+}
+
+/*Начало брендов*/
+
+.brands {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+/*Начало блока "О нас" и "Контакты"*/
+.contact-about {
+    padding-bottom: 95px;
+}
+
+.about {
+    float: left;
+    width: 600px;
+}
+
+.about p {
+    margin: 0;
+}
+
+.about .about-list {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    line-height: 40px;
+}
+
+.contact {
+    float: right;
+    width: 560px;
+}
+
+.contact .btn {
+    margin-top: 80px;
+}
+
+
+/*Начало футера*/
+.page-footer {
+    background-color: #464646;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.page-footer .logo {
+    float: left;
+    font-size: 48px;
+    color: #f7e184;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.page-footer .user-menu {
+    width: 980px;
+    float: right;
+    padding: 0;
+    padding-left: 680px;
+    margin: 0;
+    list-style: none;
+}
+.page-footer .user-menu li {
+    float: left;
+    margin-right: 40px;
+}
+.page-footer .user-menu li:last-child {
+    margin-right: 0;
+}
+.page-footer .user-menu a {
+    color: white;
+    text-decoration: none;
+}
+.page-footer address {
+    float: left;
+    width: 360px;
+    margin-top: 35px;
+    font-style: normal;
+    color: white;
+}
+.page-footer .footer-menu {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 620px;
+    margin-top: 35px;
+}
+.page-footer .footer-menu li {
+    float: left;
+    margin-right: 40px;
+}
+.page-footer .footer-menu li:last-child {
+    margin-right: 0;
+}
+.page-footer .footer-menu a {
+    color: white;
+}
+.page-footer .phone {
+    float: right;
+    width: 180px;
+    margin-top: 35px;
+    color: white;
+}
+.page-footer .socials {
+    float: left;
+    width: 160px;
+}
+.page-footer .logo-htmlacademy {
+    float: right;
+}

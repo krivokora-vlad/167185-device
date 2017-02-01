@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="header-container container">
         <header class="page-header">
             <div class="wrapper-logo">
                 <a href="index.html" class="logo">Device</a>
             </div>
-            <nav>
+            <nav class="clearfix">
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <input type="search" name="search" placeholder="Поиск по сайту">
                     <button type="submit">Найти</button>
                 </form>
-                <a href="catalog.html" class="btn-menu">Каталог товаров</a>
+                <a href="catalog.html" class="btn-menu open-menu">Каталог товаров</a>
                 <ul class="catalog-menu" style="display: none">
                     <li><a href="#">Виртуальная реальность</a></li>
                     <li><a href="#">Моноподы для селфи</a></li>
@@ -33,7 +33,7 @@
                     <a href="#" class="btn-user">Сравнить</a>
                     <a href="#" class="btn-user">Корзина</a>
                 </div>
-                <ul class="main-menu">
+                <ul class="main-menu clearfix">
                     <li><a href="#" class="btn-menu">Доставка</a></li>
                     <li><a href="#" class="btn-menu">Гарантия</a></li>
                     <li><a href="#" class="btn-menu">Контакты</a></li>
@@ -43,7 +43,7 @@
         <!-- Конец header, Начало промо слайдера -->
 
         <div class="slider-promo">
-            <div class="slider-item">
+            <div class="slider-item clearfix">
                 <img src="img/product_1.png" alt="Товар" width="384" height="486">
                 <div class="product-description">
                     <span class="slider-number">01</span>
@@ -112,7 +112,7 @@
         </div>
         <!-- Конец слайдера -->
 
-        <div class="page-popular">
+        <div class="page-popular clearfix">
             <div class="popular-item">
                 <a href="#">
                     <img src="img/popular_1.png" alt="Популярный товар" width="97" height="55">
@@ -154,28 +154,28 @@
     <!-- Конец популярных товаров -->
 
     <div class="page-services">
-        <div class="container">
+        <div class="container clearfix">
             <ul>
                 <li><a href="#" class="btn">Доставка</a></li>
                 <li><a href="#" class="btn">Гарантия</a></li>
                 <li><a href="#" class="btn">Кредит</a></li>
             </ul>
             <div class="wrapper">
-                <div class="slide">
+                <div class="slide clearfix">
                     <h2>Доставка</h2>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                         совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                         на ваш этаж.</p>
                     <img src="img/delivery.png" alt="Доставка" width="136" height="164">
                 </div>
-                <div class="slide" style="display: none">
+                <div class="slide clearfix" style="display: none">
                     <h2>Гарантия</h2>
                     <p>Если из-за возгарания купленного у нас товара у вас сгорит
                         дом — не переживайте, мы выдадим вам новый.<br>
                         Товар, не дом, конечно же.</p>
                     <img src="img/warranty.png" alt="Гарантия" width="171" height="195">
                 </div>
-                <div class="slide" style="display: none">
+                <div class="slide clearfix" style="display: none">
                     <h2>Кредит</h2>
                     <p>Залезть в долговую яму стало проще! Кредитные консультанты
                         подберут для вас наиболее выгодные условия кредита.
@@ -195,7 +195,7 @@
             <a href="#" class="brand-item"><img src="img/brand_4.png" alt="Бренд" width="260" height="100"></a>
         </div>
         <!-- Конец брендов -->
-        <div class="contact-about">
+        <div class="contact-about clearfix">
             <div class="about">
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -221,9 +221,9 @@
     </div>
 
     <footer class="page-footer">
-        <div class="container">
+        <div class="container clearfix">
             <a href="#" class="logo">Device</a>
-            <ul class="user-menu">
+            <ul class="user-menu clearfix">
                 <li><a href="#" class="btn-user">Войти</a></li>
                 <li><a href="#" class="btn-user">Сравнить</a></li>
                 <li><a href="#" class="btn-user">Корзина</a></li>
@@ -234,14 +234,14 @@
                 <li><a href="#" class="btn-menu">Гарантия</a></li>
                 <li><a href="#" class="btn-menu">Контакты</a></li>
             </ul>
-            <p class="phone">Тел.: +7 (495) 495-95-95</p>
+            <p class="phone clearfix">Тел.: +7 (495) 495-95-95</p>
             <div class="socials">
                 <a href="#" class="icon facebook"></a>
                 <a href="#" class="icon instagram"></a>
                 <a href="#" class="icon twitter"></a>
             </div>
-            <a href="#">
-                <img src="img/htmlacademy.png" alt="HTMLAcademy" height="27" width="34">
+            <a href="#" class="logo-htmlacademy">
+                <img src="img/htmlacademy.png" alt="HTMLAcademy" height="34" width="27">
             </a>
         </div>
     </footer>
