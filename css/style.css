@@ -3,15 +3,46 @@ body {
     /*Просто так*/
 }
 
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 /*Общие классы*/
 
 * {
     box-sizing: border-box;
+    outline: none;
 }
 
 .container {
     margin: 0 auto;
-    width: 1160px;
+    width: 1200px;
+    padding: 0 20px;
 }
 .clearfix::after {
     content: '';
@@ -21,7 +52,10 @@ body {
 .btn {
     display: block;
     width: 160px;
-    line-height: 8px;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 4px;
     background-color: #f0c52e;
     text-align: center;
     text-decoration: none;
@@ -29,7 +63,8 @@ body {
     color: black;
 }
 .btn-menu {
-    font-family: 'gilroyextrabold', sans-serif;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -40,9 +75,25 @@ body {
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 18px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'opensans', sans-serif;
     font-size: 15px;
     line-height: 20px;
+    text-decoration: none;
+    color: black;
+}
+.head-title {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 47px;
+    color: black;
+}
+.text {
+    font-family: 'opensans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
 }
 
 /*Конец общих классов*/
@@ -50,15 +101,19 @@ body {
 .header-container {
     padding-top: 40px;
 }
-
 .page-header {
     background-color: #f7e296;
     position: relative;
     padding: 30px 60px 140px 60px;
 }
-
-.wrapper-logo {
+.page-header .logo {
     position: absolute;
+    text-decoration: none;
+    color: black;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    top: -25px;
 }
 
 .page-header form {
@@ -70,7 +125,18 @@ form,
     width: 520px;
     float: left;
 }
-
+.page-header .search {
+    background-color: transparent;
+    border: none;
+}
+.page-header .search:focus {
+    border-bottom: 2px solid black;
+}
+.page-header .btn-search {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 15px 20px;
+}
 .user-menu,
 .shop-menu,
 .main-menu {
@@ -91,36 +157,109 @@ form,
     padding: 0;
     margin: 0;
 }
-
-.main-menu .btn-menu {
+.main-menu li {
     float: left;
+    margin-right: 40px;
 }
+
 /*Конец header, Начало промо слайдера*/
 
 .slider-promo {
     position: relative;
     top: -140px;
 }
-
+.slider-item {
+    padding-left: 60px;
+}
 .slider-item img {
     float: left;
 }
-
 .slider-item .product-description {
     float: right;
-    width: 520px;
+    position: relative;
+    width: 580px;
+    padding-top: 108px;
+}
+.product-description .slider-number {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 60px;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 179.2px;
+    color: white;
+}
+.product-description .btn-slider-info {
+    width: 220px;
+    line-height: 8px;
+}
+.product-description h2 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+.product-description p {
+    margin-top: 25px;
+    margin-bottom: 54px;
+}
+.product-description .btn {
+    margin-bottom: 65px;
+}
+.product-parameters {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.product-parameters .product-parameter {
+    float: left;
+}
+.product-parameter .parameter-value {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    color: black;
+}
+.product-parameter .parameter-title {
+    font-family: 'opensans', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: black;
+}
+.slider-pagination {
+    position: absolute;
+    top: 330px;
+    right: 84px;
+}
+
+.slider-pagination .dots {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-right: 23px;
+    opacity: 0.3;
+}
+.slider-pagination .dots:active {
+    opacity: 1;
+}
+.slider-pagination .dots:last-child {
+    margin-right: 0;
 }
 
 /*Начало популярных товаров*/
 
 .page-popular {
     padding-top: 50px;
+    padding-bottom: 181px;
 }
 
 .popular-item {
     float: left;
     width: 160px;
     margin-right: 40px;
+    position: relative;
 }
 
 .popular-item:last-child {
@@ -128,31 +267,69 @@ form,
 }
 
 .popular-item img {
-    background-color: #f7e296;
+    background-color: rgba(240, 197, 46, 0.5);
+}
+
+.popular-item a {
+    text-decoration: none;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: black;
+}
+.popular-item a:hover img {
+    background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-item h3 {
+    margin: 0;
+    margin-top: 33px;
 }
 
 /*Начало сервиса*/
 
 .page-services {
     background-color: #e5e5e5;
+    padding-bottom: 100px;
 }
 
 .page-services ul {
     float: left;
     width: 300px;
     list-style: none;
-    padding: 0;
+    padding: 80px 0;
     margin: 0;
+    border-right: 7px solid black;
 }
 
 .page-services li {
-    margin-top: 18px;
-    margin-bottom: 18px;
+    margin-bottom: 57px;
+    padding: 16px 0;
+    line-height: 8px;
+}
+.page-services li:last-child {
+    margin-bottom: 0;
+}
+.page-services li:hover {
+    padding: 0;
+    line-height: 40px;
+}
+.page-services li:active {
+    background-color: black;
+    color: #f7e184;
 }
 
 .page-services .wrapper {
     float: right;
     width: 760px;
+}
+
+.page-services .slide {
+    position: relative;
+}
+
+.page-services .slide h2 {
+    margin: 0;
 }
 
 .page-services .slide p {
@@ -161,7 +338,9 @@ form,
 }
 
 .page-services .slide img {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /*Начало брендов*/
@@ -175,31 +354,48 @@ form,
 .contact-about {
     padding-bottom: 95px;
 }
-
+.contact-about p {
+    margin-bottom: 19px;
+    padding-right: 120px;
+}
 .about {
     float: left;
     width: 600px;
 }
-
-.about p {
-    margin: 0;
-}
-
 .about .about-list {
     margin-top: 80px;
     margin-bottom: 80px;
     line-height: 40px;
+    list-style: none;
+    padding: 0;
 }
-
+.about-list .item {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+.about-list .item::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border: 3px solid black;
+    border-radius: 50%;
+    opacity: 0.3;
+    margin-right: 25px;
+}
 .contact {
     float: right;
     width: 560px;
 }
-
 .contact .btn {
     margin-top: 80px;
 }
-
+.btn-about,
+.btn-contact {
+    width: 260px;
+    line-height: 8px;
+}
 
 /*Начало футера*/
 .page-footer {
@@ -207,8 +403,22 @@ form,
     padding-top: 65px;
     padding-bottom: 65px;
 }
+.page-footer .container {
+    position: relative;
+}
+/*.page-footer .container::after {
+    content: '';
+    width: 80px;
+    height: 7px;
+    background-color: #f7e184;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}*/
 .page-footer .logo {
     float: left;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
     font-size: 48px;
     color: #f7e184;
     text-transform: uppercase;
@@ -236,6 +446,9 @@ form,
 .page-footer address {
     float: left;
     width: 360px;
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
     margin-top: 35px;
     font-style: normal;
     color: white;
@@ -262,6 +475,7 @@ form,
     float: right;
     width: 180px;
     margin-top: 35px;
+    margin-bottom: 0;
     color: white;
 }
 .page-footer .socials {
@@ -269,6 +483,7 @@ form,
     width: 160px;
 }
 .page-footer .logo-htmlacademy {
+    margin-top: 63px;
     float: right;
 }
 
@@ -297,29 +512,53 @@ form,
     margin-right: 0;
 }
 .breadcrumbs a {
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.3);
 }
 
 /*Начало каталога*/
 
-.page-catalog {
-
+.page-catalog h3 {
+    margin: 0;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .filter-product {
     padding-left: 60px;
+    padding-bottom: 60px;
     background: rgba(0, 0, 0, 0.16);
     float: left;
     width: 328px;
 }
 .filter-product h3 {
-    margin: 30px 0 30px 0;
-    font-size: 16px;
-    text-transform: uppercase;
+    /*margin: 30px 0 30px 0;*/
     display: inline-block;
 }
+.filter h2 {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+}
 
+.filter .btn {
+    line-height: 8px;
+    border: none;
+}
+
+.filter label {
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
 
 .sorting {
     float: left;
@@ -331,8 +570,7 @@ form,
     background: rgba(0, 0, 0, 0.08);
 }
 .sorting header h3{
-    float: left;
-    margin: 24px 0;
+    /*margin: 24px 0;*/
     display: inline-block;
 }
 .sorting header ul {
@@ -349,6 +587,11 @@ form,
 }
 .sorting header li:last-child {
     margin-right: 0;
+}
+
+.list-sorting-type a {
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-size: 14px;
 }
 .sorting header a {
     text-decoration: none;
@@ -372,6 +615,9 @@ form,
     float: left;
     margin-top: 34px;
     margin-bottom: 76px;
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
     line-height: 18px;
 }
 .product-item a {
@@ -383,24 +629,137 @@ form,
     float: right;
     margin-top: 40px;
     margin-bottom: 76px;
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
 }
 
-.pagination {
+.catalog-pagination{
     list-style: none;
     margin: 0;
     display: block;
     background-color: #ebebeb;
 }
-.pagination li {
+.catalog-pagination li {
     float: left;
     padding: 30px;
 }
-.pagination li:last-child {
+.catalog-pagination li:last-child {
     float: right;
 }
-.pagination a {
+.catalog-pagination a {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
     font-size: 16px;
     text-decoration: none;
-    color: black;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    opacity: 0.3;
+}
+.catalog-pagination a:active {
+    opacity: 1;
+}
+.catalog-pagination .prev,
+.catalog-pagination .next {
+    opacity: 1;
+}
+
+/******Модальные окна******/
+.modal-write-us {
+    position: fixed;
+    z-index: 10;
+    top: 120px;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+    padding: 80px 100px 96px 100px;
+    background-color: white;
+}
+.modal-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 54px;
+    height: 54px;
+    background-color: #f7e296;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    background-color: white;
+    width: 2px;
+    height: 32px;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+.modal-write-us .form-write-us {
+    width: 760px;
+}
+.form-write-us .form-name,
+.form-write-us .form-email {
+    width: 360px;
+    margin-bottom: 20px;
+}
+.form-write-us .form-name,
+.form-write-us .form-text {
+    float: left;
+}
+.form-write-us .form-email {
+    float: right;
+}
+.form-write-us label {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    display: block;
+    margin: 13px 0;
+}
+.form-write-us input {
+    width: 100%;
+}
+.form-write-us textarea {
+    margin-bottom: 55px;
+    width: 760px;
+    min-height: 156px;
+    resize: none;
+}
+.form-write-us input,
+.form-write-us textarea {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 17px 19px;
+    font-family: 'opensans', 'Arial', sans-serif;
+    font-weight: 300;
+}
+.form-write-us .btn {
+    width: 200px;
+    line-height: 8px;
+    border: none;
+}
+/***Модал Мар***/
+.modal-map {
+    position: fixed;
+    z-index: 10;
+    top: 120px;
+    left: 50%;
+    width: 994px;
+    height: 593px;
+    margin-left: -497px;
+    background: transparent url('../img/map-big.png') no-repeat;
+}
+.modal-map .modal-close {
+    right: 37px;
 }

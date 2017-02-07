@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <div class="container">
+      <div class="header-container container">
           <header class="page-header">
               <div class="wrapper-logo">
                   <a href="index.html" class="logo">Device</a>
               </div>
-              <nav>
+              <nav class="clearfix">
                   <form action="https://echo.htmlacademy.ru" method="post">
-                      <input type="search" name="search" placeholder="Поиск по сайту">
-                      <button type="submit">Найти</button>
+                      <input type="search" name="search" class="search text" placeholder="Поиск по сайту">
+                      <button type="submit" class="btn-search">Найти</button>
                   </form>
-                  <a href="catalog.html" class="btn-menu">Каталог товаров</a>
+                  <a href="catalog.html" class="btn-menu open-menu">Каталог товаров</a>
                   <ul class="catalog-menu" style="display: none">
                       <li><a href="#">Виртуальная реальность</a></li>
                       <li><a href="#">Моноподы для селфи</a></li>
@@ -33,7 +33,7 @@
                       <a href="#" class="btn-user">Сравнить</a>
                       <a href="#" class="btn-user">Корзина</a>
                   </div>
-                  <ul class="main-menu">
+                  <ul class="main-menu clearfix">
                       <li><a href="#" class="btn-menu">Доставка</a></li>
                       <li><a href="#" class="btn-menu">Гарантия</a></li>
                       <li><a href="#" class="btn-menu">Контакты</a></li>
@@ -42,7 +42,7 @@
           </header>
           <!-- Начало хлебной крошки -->
           <div class="breadcrumbs clearfix">
-              <h2>Моноподы для селфи</h2>
+              <h2 class="head-title">Моноподы для селфи</h2>
               <ul>
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">Каталог товаров</a></li>
@@ -77,7 +77,9 @@
                         <div class="bluetooth">
                             <h2>Bluetooth</h2>
                             <input type="radio" name="bluetooth" value="true">
+                            <label for="true">Есть</label>
                             <input type="radio" name="bluetooth" value="false">
+                            <label for="false">Нет</label>
                         </div>
                         <button type="submit" name="show" class="btn">Показать</button>
                   </form>
@@ -85,12 +87,12 @@
               <section class="sorting">
                   <header class="clearfix">
                         <h3>Сортировка:</h3>
-                        <ul>
+                        <ul class="list-sorting-type">
                             <li><a href="#">По цене</a></li>
                             <li><a href="#">По типу</a></li>
                             <li><a href="#">По популярности</a></li>
                         </ul>
-                        <ul>
+                        <ul class="list-sorting">
                             <li><a href="#" class="sorting-up"></a></li>
                             <li><a href="#" class="sorting-down"></a></li>
                         </ul>
@@ -117,7 +119,7 @@
                             <span>4 900 руб.</span>
                         </article>
                   </div>
-                  <ul class="pagination clearfix">
+                  <ul class="catalog-pagination clearfix">
                         <li><a href="#" class="prev">Назад</a></li>
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
@@ -129,9 +131,9 @@
       </div>
 
       <footer class="page-footer">
-          <div class="container">
-              <a href="#" class="logo">Device</a>
-              <ul class="user-menu">
+          <div class="container clearfix">
+              <a href="index.html" class="logo">Device</a>
+              <ul class="user-menu clearfix">
                   <li><a href="#" class="btn-user">Войти</a></li>
                   <li><a href="#" class="btn-user">Сравнить</a></li>
                   <li><a href="#" class="btn-user">Корзина</a></li>
@@ -142,14 +144,14 @@
                   <li><a href="#" class="btn-menu">Гарантия</a></li>
                   <li><a href="#" class="btn-menu">Контакты</a></li>
               </ul>
-              <p class="phone">Тел.: +7 (495) 495-95-95</p>
+              <p class="phone clearfix">Тел.: +7 (495) 495-95-95</p>
               <div class="socials">
                   <a href="#" class="icon facebook"></a>
                   <a href="#" class="icon instagram"></a>
                   <a href="#" class="icon twitter"></a>
               </div>
-              <a href="#">
-                  <img src="img/htmlacademy.png" alt="HTMLAcademy" height="27" width="34">
+              <a href="#" class="logo-htmlacademy">
+                  <img src="img/htmlacademy.png" alt="HTMLAcademy" height="34" width="27">
               </a>
           </div>
       </footer>
