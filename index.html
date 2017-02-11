@@ -10,13 +10,13 @@
     <div class="header-container container">
         <header class="page-header">
             <a class="logo">Device</a>
-            <nav class="clearfix">
+            <nav class="page-header-inner">
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <input type="search" name="search" class="search text" placeholder="Поиск по сайту">
                     <button type="submit" class="btn-search">Найти</button>
                 </form>
                 <a href="catalog.html" class="btn-menu open-menu">Каталог товаров</a>
-                <ul class="catalog-menu" style="display: none">
+                <ul class="catalog-menu">
                     <li><a href="#">Виртуальная реальность</a></li>
                     <li><a href="#">Моноподы для селфи</a></li>
                     <li><a href="#">Экшн-камеры</a></li>
@@ -25,16 +25,14 @@
                     <li><a href="#">Квадрокоптеры</a></li>
                 </ul>
                 <div class="user-menu">
-                    <a href="#" class="login btn-user">Войти</a>
+                    <a href="#" class="btn-user icon btn-login">Войти</a>
+                    <a href="#" class="btn-user icon btn-compare">Сравнить</a>
+                    <a href="#" class="btn-user icon btn-cart">Корзина</a>
                 </div>
-                <div class="shop-menu">
-                    <a href="#" class="btn-user">Сравнить</a>
-                    <a href="#" class="btn-user">Корзина</a>
-                </div>
-                <ul class="main-menu clearfix">
+                <ul class="main-menu">
                     <li><a href="#" class="btn-menu">Доставка</a></li>
                     <li><a href="#" class="btn-menu">Гарантия</a></li>
-                    <li><a href="#" class="btn-menu">Контакты</a></li>
+                    <li><a href="#" class="btn-menu btn-contacts">Контакты</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,11 +43,14 @@
                 <img src="img/product_1.png" alt="Товар" width="384" height="486">
                 <div class="product-description">
                     <span class="slider-number">01</span>
-                    <h2 class="head-title">Делай селфи, как Бен Стиллер!</h2>
+                    <h2 class="head-title">
+                        Делай селфи,<br>
+                        как Бен Стиллер!
+                    </h2>
                     <p class="text">Самая длинная палка для селфи доступна в нашем магазине.<br>
                         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                     <a href="#" class="btn btn-slider-info">Подробнее</a>
-                    <ul class="product-parameters clearfix">
+                    <ul class="product-parameters">
                         <li class="product-parameter">
                             <span class="parameter-value">8,5 м</span>
                             <span class="parameter-title">Длина палки</span>
@@ -69,7 +70,9 @@
                 <img src="img/product_2.png" alt="Товар" width="345" height="485">
                 <div class="product-description">
                     <span class="slider-number">02</span>
-                    <h2 class="head-title">Худеем правильно!</h2>
+                    <h2 class="head-title">
+                        Худеем<br>правильно!
+                    </h2>
                     <p class="text">Мотивирующие фитнесс-браслеты помогут найти в себе силы <br>
                         не пропускать занятия и соблюдать диету.</p>
                     <a href="#" class="btn btn-slider-info">Подробнее</a>
@@ -85,8 +88,9 @@
                 <img src="img/product_3.png" alt="Товар" width="526" height="334">
                 <div class="product-description">
                     <span class="slider-number">03</span>
-                    <h2 class="head-title">Порхает как бабочка,<br>
-                        жалит как пчела!</h2>
+                    <h2 class="head-title">
+                        Порхает как бабочка, жалит как пчела!
+                    </h2>
                     <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                         мощным лазером, замаскированным под стандартную камеру.</p>
                     <a href="#" class="btn btn-slider-info">Подробнее</a>
@@ -154,11 +158,11 @@
     <div class="page-services">
         <div class="container clearfix">
             <ul>
-                <li><a href="#" class="btn">Доставка</a></li>
+                <li class="active"><a href="#" class="btn">Доставка</a></li>
                 <li><a href="#" class="btn">Гарантия</a></li>
                 <li><a href="#" class="btn">Кредит</a></li>
             </ul>
-            <div class="wrapper">
+            <div class="slider-services">
                 <div class="slide clearfix">
                     <h2 class="head-title">Доставка</h2>
                     <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -211,7 +215,7 @@
                 <h2 class="head-title">Контакты</h2>
                 <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
                     проверить работоспособность покупки. Всякое бывает.</p>
-                <a href="#"><img src="img/map.jpg" alt="Карта" width="560" height="222"></a>
+                <a href="#" class="map-open"><img src="img/map.jpg" alt="Карта" width="560" height="222"></a>
                 <a href="#" class="btn btn-contact">Напишите нам</a>
             </div>
         </div>
@@ -219,12 +223,12 @@
     </div>
 
     <footer class="page-footer">
-        <div class="container clearfix">
+        <div class="container">
             <a class="logo">Device</a>
-            <ul class="user-menu clearfix">
-                <li><a href="#" class="btn-user">Войти</a></li>
-                <li><a href="#" class="btn-user">Сравнить</a></li>
-                <li><a href="#" class="btn-user">Корзина</a></li>
+            <ul class="footer-user-menu">
+                <li><a href="#" class="btn-user icon btn-user">Войти</a></li>
+                <li><a href="#" class="btn-user icon btn-compare">Сравнить</a></li>
+                <li><a href="#" class="btn-user icon btn-cart">Корзина</a></li>
             </ul>
             <address>г. Москва, ул. Строителей, 15</address>
             <ul class="footer-menu">
@@ -232,7 +236,7 @@
                 <li><a href="#" class="btn-menu">Гарантия</a></li>
                 <li><a href="#" class="btn-menu">Контакты</a></li>
             </ul>
-            <p class="phone clearfix">Тел.: +7 (495) 495-95-95</p>
+            <p class="phone">Тел.: +7 (495) 495-95-95</p>
             <div class="socials">
                 <a href="#" class="icon facebook"></a>
                 <a href="#" class="icon instagram"></a>
@@ -245,12 +249,12 @@
     </footer>
 
     <!-- Начало всплывающей формы write-us, при нажатии на ссылку "Напишите нам" -->
-    <div class="modal-write-us" style="display: none;">
+    <div class="modal-write-us">
         <button type="button" class="modal-close" title="Закрыть"></button>
         <form action="https://echo.htmlacademy.ru" method="post" class="form-write-us">
             <div class="form-name">
                 <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name"placeholder="Представьтесь, пожалуйста">
+                <input type="text" name="username" id="name" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="form-email">
                 <label for="email">Ваш e-mail:</label>
@@ -264,8 +268,10 @@
         </form>
     </div>
     <!-- Начало всплывающего окна map, при нажатии на карту в блоке "Контакты" -->
-    <div class="modal-map" style="display: none;">
+    <div class="modal-map">
         <button type="button" class="modal-close" title="Закрыть"></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.096547299619!2d37.52859875939547!3d55.68730918683857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1486680375780" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
