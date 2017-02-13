@@ -8,7 +8,7 @@
   </head>
   <body>
         <div class="header-container container">
-          <header class="page-header">
+          <header class="page-header page-header-catalog">
             <a href="index.html" class="logo">Device</a>
             <nav class="page-header-inner">
                   <form action="https://echo.htmlacademy.ru" method="post">
@@ -25,9 +25,10 @@
                       <li><a href="#">Квадрокоптеры</a></li>
                   </ul>
                   <div class="user-menu">
-                      <a href="#" class="btn-user icon btn-login">Войти</a>
-                      <a href="#" class="btn-user icon btn-compare">Сравнить</a>
-                      <a href="#" class="btn-user icon btn-cart">Корзина</a>
+                      <a href="#" class="btn-user btn-login btn-name-user">Валентин Петухов</a>
+                      <a href="#" class="btn-user btn-login-out">Выйти</a>
+                      <a href="#" class="btn-user btn-compare">Сравнить</a>
+                      <a href="#" class="btn-user btn-cart">Корзина</a>
                   </div>
                   <ul class="main-menu">
                       <li><a href="#" class="btn-menu">Доставка</a></li>
@@ -59,41 +60,37 @@
                         <form action="https://echo.htmlacademy.ru" method="get" class="filter">
                             <div class="value">
                                 <h2>Стоимость</h2>
-                                <input type="range" name="value" min="0" max="10000" value="5000">
+                                 <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                                </div>
                             </div>
                             <div class="color">
                                 <h2>Цвета</h2>
-                                <label for="black">
-                                    <input type="checkbox" name="black" id="black" checked>
-                                    Черный
-                                </label>
-                                <label for="white">
-                                    <input type="checkbox" name="white" id="white">
-                                    Белый
-                                </label>
-                                <label for="blue">
-                                    <input type="checkbox" name="blue" id="blue" checked>
-                                    Синий
-                                </label>
-                                <label for="red">
-                                    <input type="checkbox" name="red" id="red" checked>
-                                    Красный
-                                </label>
-                                <label for="pink">
-                                    <input type="checkbox" name="pink" id="pink">
-                                    Розовый
-                                </label>
+                                <input type="checkbox" name="black" id="black" checked>
+                                <label for="black">Черный</label>
+                                <input type="checkbox" name="white" id="white">
+                                <label for="white">Белый</label>
+                                <input type="checkbox" name="blue" id="blue" checked>
+                                <label for="blue">Синий</label>
+                                <input type="checkbox" name="red" id="red" checked>
+                                <label for="red">Красный</label>
+                                <input type="checkbox" name="pink" id="pink">
+                                <label for="pink">Розовый</label>
                             </div>
                             <div class="bluetooth">
                                 <h2>Bluetooth</h2>
-                                <label for="true">
-                                    <input type="radio" name="bluetooth" value="true">
-                                    Есть
-                                </label>
-                                <label for="false">
-                                    <input type="radio" name="bluetooth" value="false">
-                                    Нет
-                                </label>
+                                <input type="radio" name="bluetooth" id="true" value="true" checked>
+                                <label for="true">Есть</label>
+                                <input type="radio" name="bluetooth" id="false" value="false">
+                                <label for="false">Нет</label>
                             </div>
                             <button type="submit" name="show" class="btn">Показать</button>
                         </form>
@@ -105,13 +102,13 @@
                     <div class="content content-right">
                         <h3>Сортировка:</h3>
                         <ul class="list-sorting-type">
-                            <li><a href="#">По цене</a></li>
+                            <li><a href="#" class="active">По цене</a></li>
                             <li><a href="#">По типу</a></li>
                             <li><a href="#">По популярности</a></li>
                         </ul>
                         <ul class="list-sorting">
                             <li><a href="#" class="sorting-up"></a></li>
-                            <li><a href="#" class="sorting-down"></a></li>
+                            <li><a href="#" class="sorting-down active"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -141,9 +138,12 @@
                         </div>
                         <ul class="catalog-pagination">
                             <li><a href="#" class="prev">Назад</a></li>
-                            <li><a href="#" class="page">1</a></li>
-                            <li><a href="#" class="page">2</a></li>
-                            <li><a href="#" class="page">3</a></li>
+                            <li>
+                                <ul class="pagination-pages">
+                                    <li><a href="#" class="active">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
                             <li><a href="#" class="next">Вперёд</a></li>
                         </ul>
                     </div>
