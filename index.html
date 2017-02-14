@@ -15,17 +15,27 @@
                     <input type="search" name="search" class="search text" placeholder="Поиск по сайту">
                     <button type="submit" class="btn-search">Найти</button>
                 </form>
-                <a href="catalog.html" class="btn-menu open-menu">Каталог товаров</a>
-                <ul class="catalog-menu">
-                    <li><a href="#">Виртуальная реальность</a></li>
-                    <li><a href="#">Моноподы для селфи</a></li>
-                    <li><a href="#">Экшн-камеры</a></li>
-                    <li><a href="#">Фитнесс-браслеты</a></li>
-                    <li><a href="#">Умные часы</a></li>
-                    <li><a href="#">Квадрокоптеры</a></li>
-                </ul>
+                <div class="catalog">
+                    <a href="catalog.html" class="btn-menu open-menu">Каталог товаров</a>
+                    <ul class="catalog-menu">
+                        <li>
+                            <a href="#">Виртуальная реальность</a>
+                            <a href="#">Моноподы для селфи</a>
+                            <a href="#">Экшн-камеры</a>
+                        </li>
+                        <li>
+                            <a href="#">Фитнесс-браслеты</a>
+                            <a href="#">Умные часы</a>
+                        </li>
+                        <li>
+                            <a href="#">Квадрокоптеры</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="user-menu">
                     <a href="#" class="btn-user btn-login">Войти</a>
+                </div>
+                <div class="shop-menu">
                     <a href="#" class="btn-user btn-compare">Сравнить</a>
                     <a href="#" class="btn-user btn-cart">Корзина</a>
                 </div>
@@ -39,83 +49,90 @@
         <!-- Конец header, Начало промо слайдера -->
 
         <div class="slider-promo">
-            <div class="slider-item">
-                <div class="wrapper-img">
-                    <img src="img/product_1.png" alt="Товар" width="580" height="505">
+            <div class="slider">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1" class="dots"></label>
+                    <label for="btn-2" class="dots"></label>
+                    <label for="btn-3" class="dots"></label>
                 </div>
-                <div class="product-description">
-                    <span class="slider-number">01</span>
-                    <h2 class="head-title">
-                        Делай селфи,<br>
-                        как Бен Стиллер!
-                    </h2>
-                    <p class="text">Самая длинная палка для селфи доступна в нашем магазине.<br>
-                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <a href="#" class="btn btn-slider-info">Подробнее</a>
-                    <ul class="product-parameters">
-                        <li class="product-parameter">
-                            <span class="parameter-value">8,5 м</span>
-                            <span class="parameter-title">Длина палки</span>
-                        </li>
-                        <li class="product-parameter">
-                            <span class="parameter-value">5 кг</span>
-                            <span class="parameter-title">Вес палки</span>
-                        </li>
-                        <li class="product-parameter">
-                            <span class="parameter-value">Карбон</span>
-                            <span class="parameter-title">Материал</span>
-                        </li>
-                    </ul>
+                <div class="slides">
+                <div class="slider-item">
+                    <div class="wrapper-img">
+                        <img src="img/product_1.png" alt="Товар" width="580" height="505">
+                    </div>
+                    <div class="product-description">
+                        <span class="slider-number">01</span>
+                        <h2 class="head-title">
+                            Делай селфи,<br>
+                            как Бен Стиллер!
+                        </h2>
+                        <p class="text">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                        <a href="#" class="btn btn-slider-info">Подробнее</a>
+                        <ul class="product-parameters">
+                            <li class="product-parameter">
+                                <span class="parameter-value">8,5 м</span>
+                                <span class="parameter-title">Длина палки</span>
+                            </li>
+                            <li class="product-parameter">
+                                <span class="parameter-value">5 кг</span>
+                                <span class="parameter-title">Вес палки</span>
+                            </li>
+                            <li class="product-parameter">
+                                <span class="parameter-value">Карбон</span>
+                                <span class="parameter-title">Материал</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="wrapper-img">
+                        <img src="img/product_2.png" alt="Товар" width="580" height="505">
+                    </div>
+                    <div class="product-description">
+                        <span class="slider-number">02</span>
+                        <h2 class="head-title">
+                            Худеем<br>правильно!
+                        </h2>
+                        <p class="text">Мотивирующие фитнесс-браслеты помогут найти в себе силы <br>
+                            не пропускать занятия и соблюдать диету.</p>
+                        <a href="#" class="btn btn-slider-info">Подробнее</a>
+                        <ul class="product-parameters">
+                            <li class="product-parameter">
+                                <span class="parameter-value">48 часов</span>
+                                <span class="parameter-title">Без подзарядки</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <div class="wrapper-img">
+                        <img src="img/product_3.png" alt="Товар" width="580" height="505">
+                    </div>
+                    <div class="product-description">
+                        <span class="slider-number">03</span>
+                        <h2 class="head-title">
+                            Порхает как бабочка, жалит как пчела!
+                        </h2>
+                        <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                            мощным лазером, замаскированным под стандартную камеру.</p>
+                        <a href="#" class="btn btn-slider-info">Подробнее</a>
+                        <ul class="product-parameters">
+                            <li class="product-parameter">
+                                <span class="parameter-value">800 м</span>
+                                <span class="parameter-title">Дальность полета</span>
+                            </li>
+                            <li class="product-parameter">
+                                <span class="parameter-value">50 м</span>
+                                <span class="parameter-title">Радиус поражения</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="slider-item" style="display: none">
-                <div class="wrapper-img">
-                    <img src="img/product_2.png" alt="Товар" width="580" height="505">
-                </div>
-                <div class="product-description">
-                    <span class="slider-number">02</span>
-                    <h2 class="head-title">
-                        Худеем<br>правильно!
-                    </h2>
-                    <p class="text">Мотивирующие фитнесс-браслеты помогут найти в себе силы <br>
-                        не пропускать занятия и соблюдать диету.</p>
-                    <a href="#" class="btn btn-slider-info">Подробнее</a>
-                    <ul class="product-parameters">
-                        <li class="product-parameter">
-                            <span class="parameter-value">48 часов</span>
-                            <span class="parameter-title">Без подзарядки</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="slider-item" style="display: none">
-                <div class="wrapper-img">
-                    <img src="img/product_3.png" alt="Товар" width="580" height="505">
-                </div>
-                <div class="product-description">
-                    <span class="slider-number">03</span>
-                    <h2 class="head-title">
-                        Порхает как бабочка, жалит как пчела!
-                    </h2>
-                    <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                        мощным лазером, замаскированным под стандартную камеру.</p>
-                    <a href="#" class="btn btn-slider-info">Подробнее</a>
-                    <ul class="product-parameters">
-                        <li class="product-parameter">
-                            <span class="parameter-value">800 м</span>
-                            <span class="parameter-title">Дальность полета</span>
-                        </li>
-                        <li class="product-parameter">
-                            <span class="parameter-value">50 м</span>
-                            <span class="parameter-title">Радиус поражения</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="slider-pagination">
-                <div class="dots"></div>
-                <div class="dots"></div>
-                <div class="dots"></div>
             </div>
         </div>
         <!-- Конец слайдера -->
