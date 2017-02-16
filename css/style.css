@@ -1518,7 +1518,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.list-sorting-type a {
+.content-right .list-sorting-type a {
     font-family: 'opensans', 'Arial', sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
@@ -1529,7 +1529,7 @@ body {
 .list-sorting-type a:active {
     color: rgba(0, 0, 0, 1);
 }
-.list-sorting-type .active {
+.content-right .list-sorting-type .active {
     color: rgba(0, 0, 0, 1);
 }
 .sorting .wrapper-1 .list-sorting {
