@@ -2005,3 +2005,6 @@ body {
 .modal-map-open {
     display: block;
 }
+iframe{
+    border: 0;
+ }
