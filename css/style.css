@@ -292,6 +292,12 @@ body {
     text-decoration: none;
     color: black;
 }
+.catalog-menu a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.catalog-menu a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
 .catalog-menu:hover {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,6 +309,7 @@ body {
     width: 245px;
     padding-right: 25px;
     margin-right: 275px;
+    vertical-align: middle;
 }
 .open-menu:hover + .catalog-menu {
     display: -webkit-box;
@@ -593,9 +600,9 @@ body {
     z-index: 1000;
     height: 10px;
 }
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-1:checked ~ .slider-controls label[for='btn-1'],
+#btn-2:checked ~ .slider-controls label[for='btn-2'],
+#btn-3:checked ~ .slider-controls label[for='btn-3'] {
     opacity: 1;
 }
 .slider-item {
@@ -748,14 +755,14 @@ body {
 .slider-services-controls .btn:last-child {
     margin-bottom: 0;
 }
-#btn-services-1:checked ~ .slider-services-controls label[for="btn-services-1"],
-#btn-services-2:checked ~ .slider-services-controls label[for="btn-services-2"],
-#btn-services-3:checked ~ .slider-services-controls label[for="btn-services-3"] {
+#btn-services-1:checked ~ .slider-services-controls label[for='btn-services-1'],
+#btn-services-2:checked ~ .slider-services-controls label[for='btn-services-2'],
+#btn-services-3:checked ~ .slider-services-controls label[for='btn-services-3'] {
     color: #f7e184;
 }
-#btn-services-1:checked ~ .slider-services-controls label[for="btn-services-1"]::before,
-#btn-services-2:checked ~ .slider-services-controls label[for="btn-services-2"]::before,
-#btn-services-3:checked ~ .slider-services-controls label[for="btn-services-3"]::before {
+#btn-services-1:checked ~ .slider-services-controls label[for='btn-services-1']::before,
+#btn-services-2:checked ~ .slider-services-controls label[for='btn-services-2']::before,
+#btn-services-3:checked ~ .slider-services-controls label[for='btn-services-3']::before {
     content: '';
     position: absolute;
     top: 0;
@@ -844,7 +851,7 @@ body {
     margin-right: 0;
 }
 
-/*Начало блока "О нас" и "Контакты"*/
+/*Начало блока 'О нас' и 'Контакты'*/
 
 .contact-about {
     padding-bottom: 82px;
@@ -883,6 +890,7 @@ body {
     border: 3px solid black;
     border-radius: 50%;
     opacity: 0.3;
+    vertical-align: middle;
 }
 .contact {
     float: right;
@@ -1278,6 +1286,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     letter-spacing: 3.8px;
+    vertical-align: middle;
 }
 /***Начало прайс контроля***/
 .range-controls {
@@ -1331,6 +1340,7 @@ body {
     font-weight: 300;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
 }
 .price-controls input {
     width: 75%;
@@ -1426,7 +1436,7 @@ body {
 .color label:active::before {
     background-color: #c4c4c4;
 }
-.color input[type="checkbox"]:checked + label::after {
+.color input[type='checkbox']:checked + label::after {
     content: '';
     position: absolute;
     top: 8px;
@@ -1458,7 +1468,7 @@ body {
 .bluetooth label:active::before {
     border: 2px solid #acacac;
 }
-.bluetooth input[type="radio"]:checked + label::after {
+.bluetooth input[type='radio']:checked + label::after {
     content: '';
     position: absolute;
     top: 7px;
@@ -1543,6 +1553,7 @@ body {
     background-repeat: no-repeat;
     background-position: -563px -10px;
     opacity: 0.2;
+    vertical-align: middle;
 }
 .sorting-down {
     display: inline-block;
@@ -1552,6 +1563,7 @@ body {
     background-repeat: no-repeat;
     background-position: -526px -10px;
     opacity: 0.2;
+    vertical-align: middle;
 }
 .list-sorting .active {
     opacity: 1;
@@ -1615,6 +1627,7 @@ body {
     background-image: url('../img/sprite.png');
     background-repeat: no-repeat;
     background-position: -346px -10px;
+    vertical-align: middle;
 }
 .product-item:hover .product-services {
     display: -webkit-box;
@@ -1695,6 +1708,7 @@ body {
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.1px;
+    vertical-align: middle;
 }
 .product-item:last-child h1 {
     width: 230px;
